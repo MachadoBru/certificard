@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
+  font-family: 'Roboto', sans-serif;
+}
+.container {  /* para chamar uma classe, coloca um "." + "nome da classe".  */
+  background: #ECF4FF;
+  margin: 64px; /*margem do elemento externo para o interno*/
+  padding: 64px; /*margem do elemento interno para o externo*/
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0E1D2F;
+  color: #1C1C1C;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;/* centralizei colocando um espaço entre os elementos, tenho dois elementos no cabeçalho, a foto+titulo+subtitulo & o botao alterar tema, aqui eu separo cada um pra um lado*/
+}
+
+.perfil{
+  display: flex;
+}
+.perfil-foto{
+  border-radius: 400px;
+  max-height: 150px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.titulo-subtitulo{
+  margin-left: 16px;
+}
+.titulo-subtitulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+.titulo-subtitulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.tema button {
+  align-self: flex-end; /* aqui alinho o botao no canto direito da tela*/
+  font-size: 16px;
+  padding: 8px 16px; /*1º numero é da distancia do topo e o q ta embaixo. O 2º numero é do lado direito e esquerdo, dos lados*/
+  background: #ECF4FF;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #0E1D2F;
+  
+}
+.projetos{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);
+  margin-top: 32px;
+  padding: 32px;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  
+}
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;  
+}
+.projetos-item {
+  list-style-type: none; /* tiramos os pontos padrão css de antes de cada item */
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px; /* altura da linha */
+}
+.projetos-item a { /*aqui estou formatando tudo o q é tag ancora "a"dentro da classe projetos-item*/
+  color: #1C1C1C;
+  text-decoration: none; /*tirar cor e coisas do texto do que é clicável*/
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
+.dark .container {
+  background: #333439;
+  color: #F6F6F6;
+}
+
+.dark .projetos {
+  color: #1C1C1C;
+}
+
+.dark . tema button {
+  background: #1C1C1C;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #F7F7F7;
+}
